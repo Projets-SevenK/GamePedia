@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GamePedia - Nous contacter</title>
+  </head>
+  <body>
+    <header>
+      <nav><a href="index.html">Retour à l'Accueil</a></nav>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Vos Informations</legend>
+          <div>
+            <label for="name">Nom :</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Dupont"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemple@email.com"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre message</legend>
+          <div>
+            <label for="subject">Sujet :</label>
+            <select name="subject" id="subject">
+              <option value="">-- Veuillez choisir une option --</option>
+              <option value="proposition">Proposition de Jeu</option>
+              <option value="signalement">Signalement d'erreur</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="50"
+              rows="15"
+              placeholder="Ecrivez ici..."
+            ></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+      </form>
+    </main>
+    <footer><p>&copy; 2026 GamePedia</p></footer>
+  </body>
+</html>
